@@ -1,0 +1,39 @@
+.video
+  padding-top: 71px
+  padding-bottom: 104px
+  &-block
+    &::after
+      content: ''
+      position: absolute
+      display: none
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      height: 54px
+      width: 39px
+      background: url(../img/video/play.png) center no-repeat
+      z-index: 999
+    &:hover
+      cursor: pointer
+      & .paint-over
+        display: block
+      &.video-block::after
+        display: block
+    &__title
+      display: block
+      position: absolute
+      padding-top: 12px
+      padding-bottom: 8px
+      text-align: center
+      width: 100%
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)      
+      color: #f8f8f8
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      background-color: rgba($text-color, 0.9)
+      z-index: 2
+    &__video
+      width: 100%

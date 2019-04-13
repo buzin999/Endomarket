@@ -1,0 +1,70 @@
+.hero
+  background-color: #f8f8f8
+  padding-top: 36px
+  padding-bottom: 63px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    flex-basis: 23%
+    margin-bottom: 34px
+    padding-top: 23px
+    padding-bottom: 22px
+    padding-left: 18px
+    padding-right: 14px
+    height: 310px
+    &-1
+      background: url(../img/hero/item-1.jpg) center no-repeat
+      background-size: cover
+    &-2
+      background: url(../img/hero/item-2.jpg) center no-repeat
+      background-size: cover
+    &-3
+      background: url(../img/hero/item-3.jpg) center no-repeat
+      background-size: cover
+    &-4
+      background: url(../img/hero/item-4.jpg) center no-repeat
+      background-size: cover
+    &-5
+      background: url(../img/hero/item-5.jpg) center no-repeat
+      background-size: cover
+    &-6
+      background: url(../img/hero/item-6.jpg) center no-repeat
+      background-size: cover
+    &-7
+      background: url(../img/hero/item-7.jpg) center no-repeat
+      background-size: cover
+    &-8
+      background: url(../img/hero/item-8.jpg) center no-repeat
+      background-size: cover
+  &-item
+    position: relative
+    cursor: pointer
+    &:hover
+      background-color: rgba($text-color, 0.9)
+      & .hero-item__descr
+        display: block
+      & .hero-item__button
+        display: block
+      & .hero-item__title
+        color: #f8f8f8
+      & .paint-over
+        display: block
+    &__title
+      margin-bottom: 21px
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      min-height: 58px
+      z-index: 999
+    &__descr
+      display: none
+      margin-bottom: 60px
+      color: #f8f8f8
+      font-size: 12px
+      font-weight: 400
+      z-index: 999
+    &__button
+      display: none
+      z-index: 999

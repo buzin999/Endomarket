@@ -1,0 +1,244 @@
+@media (max-width: 1330px)
+  .container
+    max-width: 1040px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 835px
+  // Header
+  .menu
+    &-ul
+      flex-direction: column
+    &-li
+      margin-right: 0
+      margin-bottom: 5px
+  // Hero
+  .hero
+    &-item
+      flex-basis: 48%
+  // Equipment slider
+  .equipment
+    &__title
+      &-important
+        font-size: 80px
+
+@media (max-width: 991px)
+  .container
+    max-width: 610px
+  // Header
+  .menu
+    display: none
+    &-button
+      display: block
+  .logo
+    &-text
+      display: none
+  // Equipment slider
+  .equipment
+    &__block
+      padding-top: 80px
+    &__title
+      font-size: 18px
+      margin-bottom: 20px
+      &-important
+        font-size: 58px
+    &__descr
+      margin-bottom: 40px
+      max-width: 360px
+    &__button
+      margin-bottom: 50px
+  // Footer
+  .footer
+    &::before
+      display: none
+    &__navbar
+      flex-direction: column
+    &__title
+      font-size: 14px
+    &__ul
+      display: flex
+      flex-wrap: wrap
+    &-li
+      margin-right: 20px
+    &-text
+      display: none
+    &-item
+      margin-bottom: 10px
+      &__phone, &__mail
+        font-size: 20px
+    &-network
+      &__title
+        margin-bottom: 15px
+  // Header-menu
+  .menu
+    transition: 0.5s
+    transform-origin: left center
+    transform: scale(0) translateX(20%)
+    opacity: 0
+    &__active
+      display: block
+      padding: 20px
+      background-color: rgba($text-color, 0.9)
+      position: absolute
+      top: 0
+      left: 50%
+      transform: scale(1) translateX(-50%)
+      opacity: 1
+      & .menu-li__link
+        color: #fff
+        text-decoration: none
+  
+@media (max-width: 768px)
+  .container
+    max-width: 100%
+    padding: 0 30px
+  .button
+    padding: 16px 18px
+    font-size: 14px
+    &:hover
+      background-color: $success
+    
+  .section__title
+    margin-bottom: 26px
+    font-size: 26px
+  // Header
+  .header
+    &-item
+      &__phone
+        font-size: 20px
+      &__descr
+        font-size: 12px
+    &-wrap
+      padding-top: 20px
+      padding-bottom: 16px
+  .menu
+    &-li
+      &__link
+        &:hover
+          color: #113b5f
+  // Hero
+  .hero
+    padding-top: 26px
+    padding-bottom: 26px
+    &-item
+      flex-basis: 100%
+      &:hover
+        & .hero-item__descr
+          display: block
+          color: $text-color
+        & .hero-item__button
+          display: block
+        & .hero-item__title
+          color: $text-color
+        & .paint-over
+          display: none
+      &__title
+        color: $text-color
+      &__descr
+        display: block
+        color: $text-color
+      &__button
+        display: block
+    &__item
+      margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
+  // Equipment slider
+  .equipment
+    &__block
+      padding-top: 40px
+      padding-bottom: 0
+    &__title
+      font-size: 16px
+      &-important
+        font-size: 46px
+    &__descr
+      margin-bottom: 20px
+      font-size: 14px
+      max-width: 300px
+  // Promotions
+  .promotions
+    margin-top: 0
+    padding-top: 58px
+    padding-bottom: 26px
+    &-block
+      &__title
+        text-align: center
+      &__descr
+        max-width: 100%
+        text-align: justify
+        text-align-last: center
+      &__button
+        display: block
+    &__slider
+      margin-bottom: 30px
+  // Owl Carousel
+  .owl-nav
+    & button.owl-prev
+      left: 0
+    & button.owl-next
+      right: 0
+  // Video
+  .video
+    padding-top: 26px
+    padding-bottom: 26px
+    &-block
+      &:hover
+        & .paint-over
+          display: none
+        &.video-block::after
+          display: none
+      &::after
+        display: none
+  // Footer
+  .footer
+    &-navbar
+      display: none
+    &-icons
+      img:hover
+        cursor: pointer
+        filter: none
+@media (max-width: 576px)
+  .container
+    max-width: 100%
+    padding: 0 15px
+  // Header
+  .header
+    &__search
+      display: none
+    &-item
+      &__phone
+        font-size: 18px
+  .logo
+    &-img
+      &__img
+        width: 50px
+        height: 50px
+  // Equipment slider
+  .equipment
+    &__block
+      background: $text-color
+  // Promotions
+  .promotions
+    &-block
+      &__title
+        font-size: 14px
+  // Footer
+  .footer
+    &-bottom
+      flex-direction: column
+      border: none
+      padding-top: 0
+    &__wrap
+      flex-direction: row
+      justify-content: space-between
+    &__reserved
+      text-align: center
+    &-network
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__title
+        margin-bottom: 10px
+    &-item
+      justify-content: center
