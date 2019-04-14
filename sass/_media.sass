@@ -1,6 +1,10 @@
 @media (max-width: 1330px)
   .container
     max-width: 1040px
+  // Hero
+  .hero
+    &__item
+      padding-left: 10px
 
 @media (max-width: 1200px)
   .container
@@ -15,7 +19,8 @@
   // Hero
   .hero
     &-item
-      flex-basis: 48%
+      &__wrap
+        flex-basis: 48%
   // Equipment slider
   .equipment
     &__title
@@ -121,24 +126,16 @@
     padding-top: 26px
     padding-bottom: 26px
     &-item
-      flex-basis: 100%
-      &:hover
-        & .hero-item__descr
-          display: block
-          color: $text-color
-        & .hero-item__button
-          display: block
-        & .hero-item__title
-          color: $text-color
+      &__wrap
+        flex-basis: 100%
         & .paint-over
-          display: none
+            opacity: 1
       &__title
-        color: $text-color
+        color: #f8f8f8
       &__descr
-        display: block
-        color: $text-color
+        opacity: 1
       &__button
-        display: block
+        opacity: 1
     &__item
       margin-bottom: 24px
       &:last-child
@@ -185,7 +182,7 @@
     &-block
       &:hover
         & .paint-over
-          display: none
+          opacity: 0
         &.video-block::after
           display: none
       &::after
@@ -198,6 +195,7 @@
       img:hover
         cursor: pointer
         filter: none
+
 @media (max-width: 576px)
   .container
     max-width: 100%
@@ -214,6 +212,9 @@
       &__img
         width: 50px
         height: 50px
+  .menu
+    &-button
+      margin-right: 10px
   // Equipment slider
   .equipment
     &__block
